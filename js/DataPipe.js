@@ -589,6 +589,8 @@ var DataPipe = new function() {
                     }
                 });
 
+				$(document).scrollTop(0)
+
                 /*
                     if (data.result) {
                         processDialog.append('<img src="data:image/png;base64,'+data.result+'" />');
