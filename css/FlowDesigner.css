@@ -1,0 +1,150 @@
+body {
+    font-size: 12px;
+}
+
+    #flow_designer {
+        width: 1042px;
+        margin: 10px auto;
+        font-size: 12px;
+    }
+
+        #available_components {
+            width: 200px;
+            float: left;
+            margin-left: 10px;
+        }
+
+        #components {
+            width: 800px;
+            height: 450px;
+            margin-bottom: 10px;
+            padding: 10px;
+            float: left;
+            border: 1px solid #888;
+        }
+
+        .separator {
+            clear: both;
+        }
+
+        .component {
+            height: auto;
+            position: absolute;
+            padding: 5px 10px;
+            z-index: 20;
+            opacity: 0.8;
+            background-color: #EEEEEF;
+            border: 1px solid #346789;
+            border-radius: 0.5em 0.5em 0.5em 0.5em;
+            box-shadow: 2px 2px 19px #AAAAAA;
+            color: black;
+            font-size: 12px;
+            text-align: center;
+            cursor:pointer;
+        }
+
+            .component.selected {
+                background-color: #FFB750;
+            }
+
+            .component:hover {
+                box-shadow: 2px 2px 19px #444444;
+                opacity: 0.6;
+            }
+
+            .component img {
+                float: right;
+                margin-left: 5px;
+            }
+
+            .settings {
+                margin-top: 7px;
+                padding: 5px;
+                position: absolute;
+                text-align: left;
+                opacity:100%;
+                background: #F00;
+                border: 1px solid #000;
+            }
+
+                .settings .field {
+                    margin-bottom: 5px;
+                }
+
+                    .settings .name {
+                        display: table-cell;
+                        font-weight: bold;
+                        padding:3px 5px 0 0;
+                    }
+
+                    .settings .value {
+                        display: table-cell;
+                    }
+
+                        .settings .value img {
+
+                        }
+
+                        .settings input {
+                            width: 100%;
+                            height: 20px;
+                            padding: 0;
+                        }
+
+                        .settings .value input {
+                            width: 70px;
+                            height: 10px;
+                            margin-right: 5px;
+                            padding: 3px;
+                            background: #FFF;
+                            border: 1px solid #333;
+                        }
+
+                        .settings .value select {
+                            margin-right: 5px;
+                            background: #FFF;
+                            border: 1px solid #333;
+                        }
+
+            .remove {
+                min-width: 200px;
+                margin-top: 7px;
+                padding: 5px;
+                position: absolute;
+                text-align: left;
+                opacity:100%;
+                background: #F00;
+                border: 1px solid #000;
+            }
+
+        .type {
+            width: 100px;
+            height: auto;
+            margin-bottom:10px;
+            padding: 5px;
+            opacity: 0.8;
+            background-color: #EEEEEF;
+            border: 1px solid #346789;
+            border-radius: 0.5em 0.5em 0.5em 0.5em;
+            box-shadow: 2px 2px 19px #AAAAAA;
+            color: black;
+            font-size: 12px;
+            text-align: center;
+            cursor:pointer;
+        }
+
+    .active {
+        border: 1px dotted green;
+    }
+
+    .hover {
+        border: 1px dotted red;
+    }
+
+    ._jsPlumb_connector {
+        z-index: 4;
+    }
+    ._jsPlumb_endpoint {
+        z-index: 21;
+        cursor: pointer;
+    }
