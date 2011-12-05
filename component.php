@@ -67,9 +67,8 @@ class Component {
     public function getQuerySource() {
         $sql = '';
 
-        $source = $this->settings['source'];
-
-        if (!empty($source)) {
+        if (!empty($this->settings['source'])) {
+			$source = $this->settings['source'];
             $sql = 'SELECT * FROM '.$source;
         } else {
             throw new Exception('No se encontró una fuente');
